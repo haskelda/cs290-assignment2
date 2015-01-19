@@ -1,0 +1,122 @@
+<!--
+
+layout.html
+Assignment 2
+CS 290 W15
+
+David Haskell
+932430887
+haskelda@onid
+
+2015-01-18
+
+-->
+
+<!-- Table -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment-HTML-CSS-Forms</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<table id="DogTable">
+		<caption>All About My Family</caption>
+		<thead> 
+			<tr> 
+				<th>
+				<th>Dad
+				<th>Mom
+				<th>Daughter
+				<th>Son
+				<th>Dog
+			</tr>
+		</thead>
+		<tfoot>
+			<tr> <td>Footer 1<td colspan=4>Footer 2
+		</tfoot>
+		<tbody>
+			<tr> <th>Height<td>6'1"<td>5'7"<td>5'8"<td>5'2"<td>10"
+			<tr> <th>Age<td>46<td>42<td>16<td>13<td>5
+			<tr> <th>Hair<td>NA<td>Blonde<td>Blonde<td>Blonde<td>Black/Brown
+			<tr> <th>Intelligence<td>Excellent<td>No Comment<td>Thinks she knows it all<td>Doesn't care<td>NA
+			<tr> <th>Favorite Color<td>Green<td>Doesn't care<td>Pink<td>Green<td>Colorblind
+		</tbody>
+		</table>
+
+
+<!-- List -->
+
+		<div id="dl_list">
+			<dl>
+				<dt>Favorite Pet
+				<dd>Python</dd>
+			
+				<dt>My Last Name
+				<dd>Haskell</dd>
+			
+				<dt>A Lofty Goal for my grade in this class
+				<dd>C</dd>
+			</dl>
+		</div>
+
+
+<!-- Get and Post Forms -->
+
+		<form method="get" action="http://web.engr.oregonstate.edu/~osterbit/2/repo/class-content/form_tests/Formtest.php">
+			<fieldset>
+				<legend>Some GET Data</legend>
+				<br>
+				<fieldset>
+					<label>Text here: <input name="text_input"></label>
+				</fieldset>
+				<br>
+				<fieldset>
+					<label>Number here: <input type=number name="numerical_input"></label>
+				</fieldset>
+				<br>
+				<fieldset>
+					<label>Password here: <input type=password name="password_input"></label>
+				</fieldset>
+				<br>
+				<fieldset>
+					Select between:
+					<p><label><input type=radio name="candy" value="Snickers">Snickers</label>
+					<p><label><input type=radio name="candy" value="Skittles">Skittles</label>
+					<p><label><input type=radio name="candy" value="Mentos">Mentos</label>
+					<p><input type=submit value="Submit">
+				</fieldset>
+			</fieldset>
+		</form>
+
+
+		<form method="post" action="http://web.engr.oregonstate.edu/~osterbit/2/repo/class-content/form_tests/Formtest.php">
+			<fieldset>
+				<legend>Some POST Data</legend>
+				<br>
+				<fieldset>
+					<label>Text here: <input name="text_input"></label>
+				</fieldset>
+				<br>
+				<fieldset>
+					<label>Number here: <input type=number name="numerical_input"></label>
+				</fieldset>
+				<br>
+				<fieldset>
+					<label>Password here: <input type=password name="password_input"></label>
+				</fieldset>
+				<br>
+				<fieldset>
+					Select between:
+					<p><label><input type=radio name="candy" value="Snickers">Snickers</label>
+					<p><label><input type=radio name="candy" value="Skittles">Skittles</label>
+					<p><label><input type=radio name="candy" value="Mentos">Mentos</label>
+					<p><input type=submit value="Submit">
+				</fieldset>
+			</fieldset>
+		</form>
+		
+	</body>
+</html>

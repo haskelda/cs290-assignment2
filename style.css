@@ -1,0 +1,53 @@
+/*
+style.css
+Assignment 2
+CS 290 W15
+
+David Haskell
+932430887
+haskelda@onid
+
+2015-01-18
+*/
+
+
+/* Table */
+
+/* Borders for table */
+#DogTable, th, td {
+	border: 2px solid black;
+}
+
+/* Italics for row headers */
+#DogTable tbody th {
+	font-style:italic;
+	font-weight:normal;
+}
+
+/* lime background for rows 1,3,5*/
+#DogTable tbody tr:nth-child(1),tr:nth-child(3),tr:nth-child(5) {
+	background-color: lime;
+}
+
+/* aqua background for row 2,4*/
+#DogTable tbody tr:nth-child(2),tr:nth-child(4) {
+	background-color: aqua;
+}
+
+/* Red text for first non-header cell of each non-header row */
+#DogTable tbody td:nth-child(2) {
+	color: red;
+}
+
+/* Blue text for the third non-header cell of each non-header row */
+#DogTable tbody td:nth-child(4) {
+	color: blue;
+}
+
+
+/* dl list */
+
+/* For the "dl list", hover over dt entry gives dd entry a purple background */
+#dl_list dt:hover + dd {
+	background-color: purple;
+}
